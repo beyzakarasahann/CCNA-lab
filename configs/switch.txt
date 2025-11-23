@@ -1,0 +1,2 @@
+interface range f0/1 - 2
+ switchport mode access

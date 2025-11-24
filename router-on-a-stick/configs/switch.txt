@@ -1,0 +1,35 @@
+--------------------------------------------
+ SWITCH CONFIGURATION (Cisco 2960)
+ Router-on-a-Stick – Inter-VLAN Routing Lab
+--------------------------------------------
+
+! Create VLANs
+vlan 10
+ name VLAN10
+vlan 20
+ name VLAN20
+
+! Trunk to Router (GigabitEthernet0/0)
+interface FastEthernet0/1
+ switchport mode trunk
+ switchport trunk allowed vlan 10,20
+
+! VLAN 10 Access Ports
+interface FastEthernet0/2
+ switchport mode access
+ switchport access vlan 10
+
+interface FastEthernet0/3
+ switchport mode access
+ switchport access vlan 10
+
+! VLAN 20 Access Ports
+interface FastEthernet0/4
+ switchport mode access
+ switchport access vlan 20
+
+interface FastEthernet0/5
+ switchport mode access
+ switchport access vlan 20
+
+! End of switch config

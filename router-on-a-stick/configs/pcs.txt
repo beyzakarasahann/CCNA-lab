@@ -1,0 +1,42 @@
+--------------------------------------------
+ PC IP CONFIGURATIONS
+ Router-on-a-Stick – Inter-VLAN Routing Lab
+--------------------------------------------
+
+VLAN 10 PCs
+------------
+PC0:
+ IP Address: 192.168.10.2
+ Subnet Mask: 255.255.255.0
+ Default Gateway: 192.168.10.1
+
+PC1:
+ IP Address: 192.168.10.3
+ Subnet Mask: 255.255.255.0
+ Default Gateway: 192.168.10.1
+
+
+VLAN 20 PCs
+------------
+PC2:
+ IP Address: 192.168.20.2
+ Subnet Mask: 255.255.255.0
+ Default Gateway: 192.168.20.1
+
+PC3:
+ IP Address: 192.168.20.3
+ Subnet Mask: 255.255.255.0
+ Default Gateway: 192.168.20.1
+
+
+Connectivity Tests
+-------------------
+Same-VLAN:
+ PC0 → PC1 : ping 192.168.10.3
+ PC2 → PC3 : ping 192.168.20.3
+
+Inter-VLAN (Router-on-a-Stick):
+ PC0 → PC2 : ping 192.168.20.2 (SUCCESS)
+ PC1 → PC3 : ping 192.168.20.3 (SUCCESS)
+
+! End of PC configs

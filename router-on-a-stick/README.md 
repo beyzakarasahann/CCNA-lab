@@ -1,0 +1,50 @@
+# Router-on-a-Stick (Inter-VLAN Routing) – Packet Tracer
+
+This project shows how to let devices in different VLANs communicate by using **Router-on-a-Stick**.  
+A single router interface is divided into sub-interfaces, each assigned to a VLAN.
+
+---
+
+## 🖼️ Topology
+
+![Topology](topology.png)
+
+---
+
+## 📌 What This Lab Teaches
+- How to create VLANs  
+- How to assign switch ports to VLANs  
+- How to configure a trunk port  
+- How to create router sub-interfaces (dot1Q)  
+- How different VLANs communicate through a router  
+
+---
+
+## 📁 Device Configurations
+All configs are in the **configs/** folder:
+
+- `switch.txt` — VLANs, access ports, trunk  
+- `router.txt` — Router-on-a-Stick (sub-interfaces)  
+- `pcs.txt` — PC IP addresses + test results  
+
+---
+
+## 🖥️ IP Scheme
+
+**VLAN 10 (192.168.10.0/24)**  
+PC0 → 192.168.10.2  
+PC1 → 192.168.10.3  
+Gateway → 192.168.10.1  
+
+**VLAN 20 (192.168.20.0/24)**  
+PC2 → 192.168.20.2  
+PC3 → 192.168.20.3  
+Gateway → 192.168.20.1  
+
+---
+
+## 🧪 Test Results
+✔ Same-VLAN communication works  
+✔ Inter-VLAN communication works (Router-on-a-Stick)
+
+---

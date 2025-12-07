@@ -1,7 +1,7 @@
 # CCNA Network Labs
 
 Hands-on Packet Tracer labs developed while studying for the **Cisco CCNA** certification.  
-Each folder contains a separate network configuration scenario with topology diagrams and device setups.
+Each folder contains a separate network configuration scenario with topology diagrams.
 
 ---
 

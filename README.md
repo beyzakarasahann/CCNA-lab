@@ -18,8 +18,6 @@ Click below to navigate to the lab you want:
 
 ## 🎯 Purpose of This Repository
 
-✔ Practice routing & switching fundamentals  
-✔ Build a personal network engineering portfolio  
 ✔ Track CCNA learning progress  
 ✔ Demonstrate real configuration examples
 
@@ -27,9 +25,10 @@ Click below to navigate to the lab you want:
 
 ## 🚀 Progress
 
+Suggestions, improvements, and discussions are welcome! 
 More labs will be added as learning continues.  
 Feel free to **star ⭐ this repo** to support and follow the journey!
 
 ---
 
-### Developed with ❤️ and Packet Tracer 🖥️
+### Created with passion for Networking 🔥
